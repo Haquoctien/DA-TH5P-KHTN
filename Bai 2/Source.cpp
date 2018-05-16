@@ -1,8 +1,8 @@
-#include "stack.h"
 #include <iostream>
+#include "stack.h"
 using namespace std;
 
-int main(void)
+int main()
 {
 	Stack myStack;
 	stackInit(myStack);
@@ -15,7 +15,7 @@ int main(void)
 	push(myStack, 8);
 	while (!isEmpty(myStack))
 	{
-		cout << pop(myStack) << "  ";
+		cout << pop(myStack)->integer << "  ";
 	}
 	cout << endl;
 	system("pause");

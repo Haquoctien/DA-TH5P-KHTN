@@ -19,7 +19,7 @@ bool isFull(Stack st)
 	return st.length == 100;
 }
 
-bool push(Stack &st, int x)
+void push(Stack &st, int x)
 {
 	if (!isFull(st))
 	{
@@ -28,7 +28,7 @@ bool push(Stack &st, int x)
 	}
 }
 
-bool pop(Stack &st, int x)
+int pop(Stack &st)
 {
 	if (!isEmpty(st))
 	{
