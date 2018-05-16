@@ -13,6 +13,7 @@ int main()
 	push(myStack, 1);
 	push(myStack, 7);
 	push(myStack, 8);
+	cout << "Bai 2, dung dslk de cai dat queue: " << endl;
 	while (!isEmpty(myStack))
 	{
 		cout << pop(myStack)->integer << "  ";
